@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        .container {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        /* khusus tabel form */
+        .form-table td {
+            border: none;
+            padding: 5px;
+            vertical-align: top;
+        }
+        input, textarea {
+            padding: 5px;
+            width: 250px;
+        }
+        textarea {
+            height: 70px;
+        }
+        button {
+            padding: 5px 10px;
+            margin-top: 5px;
+        }
+        .sosial a {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1 digunakan untuk judul utama halaman -->
+    <h1>Profil Pribadi</h1>
+
+    <!-- div digunakan untuk mengelompokkan elemen foto & video -->
+    <div class="container">
+        <div>
+            <h3>Foto Profil</h3>
+            <!-- img digunakan untuk menampilkan gambar profil -->
+            <img src="FotoProfil.jpeg.jpg" height="350" alt="Foto Profil">
+            
+        </div>
+        
+
+        <div>
+            <h3>Video Perkenalan</h3>
+            <!-- video digunakan untuk menampilkan video perkenalan -->
+            <video height="350" controls>
+                <!-- source digunakan untuk menentukan file video -->
+                <source src="Oh my gah!.mp4" type="video/mp4">
+                Browser anda tidak mendukung video.
+            </video>
+        </div>
+    </div>
+
+    <!-- h2 digunakan sebagai subjudul bagian Nama saya -->
+    <h2>Brandon Deandra</h2>
+    <p>Mahasiswa Teknologi Informasi, Telkom University</p>
+    <!-- br digunakan untuk memberi jarak antar teks-->
+    <br>
+    <!-- h2 digunakan sebagai subjudul bagian Tentang Saya -->
+    <h2>Tentang Saya</h2>
+    <!-- p digunakan untuk paragraf teks -->
+    <p>Halo! Saya adalah seorang pengembang web antusias dengan passion di bidang teknologi dan desain kreatif.</p>
+    <br>
+
+    <!-- h2 digunakan sebagai subjudul bagian keterampilan -->
+    <h2>Keterampilan</h2>
+    <!-- table digunakan untuk menyajikan data keterampilan dalam format tabel -->
+    <table>
+        <!-- tr digunakan untuk baris tabel -->
+        <tr>
+            <!-- th digunakan untuk judul kolom tabel -->
+            <th>Keterampilan</th>
+            <th>Tingkat</th>
+        </tr>
+        <tr>
+            <!-- td digunakan untuk isi sel tabel -->
+            <td>HTML/CSS</td>
+            <td>Mahir</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Menengah</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Pemula</td>
+        </tr>
+    </table>
+
+    <!-- h2 digunakan sebagai subjudul bagian hubungi saya -->
+    <h2>Hubungi Saya</h2>
+    <!-- form digunakan untuk mengumpulkan input dari pengguna -->
+    <form>
+        <!-- table digunakan untuk menyusun label & input sejajar -->
+        <table class="form-table">
+            <tr>
+                <td>
+                    <!-- label digunakan untuk memberikan keterangan pada input -->
+                    <label for="nama">Nama:</label>
+                </td>
+                <td>
+                    <!-- input digunakan untuk data teks pendek seperti nama -->
+                    <input type="text" id="nama" name="nama">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td>
+                    <!-- input type email digunakan untuk data email -->
+                    <input type="email" id="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pesan">Pesan:</label></td>
+                <td>
+                    <!-- textarea digunakan untuk data teks panjang seperti pesan -->
+                    <textarea id="pesan" name="pesan"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <!-- button digunakan untuk mengirim data form -->
+                    <button type="submit">Kirim Pesan</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- h2 digunakan sebagai subjudul bagian media sosial -->
+    <h2>Media Sosial</h2>
+    <!-- div digunakan untuk mengelompokkan link media sosial -->
+    <div class="sosial">
+        <!-- a digunakan untuk hyperlink menuju ke situs tertentu -->
+        <a href="https://www.linkedin.com/in/brandon-deandra-744a222a1/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/BrandonSjt" target="_blank">GitHub</a>
+        <a href="http://x.com/BrandonSjt" target="_blank">Twitter</a>
+    </div>
+</body>
+</html>
